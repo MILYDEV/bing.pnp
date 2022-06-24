@@ -1,0 +1,504 @@
+* {
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+
+.bg-loader {
+    background-color: #181818;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-loader .loader {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #181818;
+    border-radius: 50%;
+    border-top-color: blue;
+    border-right-color: blue;
+    border-bottom-color: blue;
+    animation: spinning 1s linear infinite;
+}
+
+
+@keyframes spinning {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+	max-width: 100%;
+	font-family: sans-serif;
+	background: #181818;
+	color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.judul-halaman {
+	font-size: 30px;
+	color: orange;
+	text-align: center;
+	margin: 50px;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
+.wrapper {
+	width: 1100px;
+	margin: auto;
+	position: relative;
+}
+
+.logo {
+	display: inline-block;
+	align-items: center;
+	max-width: 550px;
+	padding-top: 5px;
+}
+
+.logo a {
+	font-size: 30px;
+	font-weight: bold;
+	float: left;
+	color: white;
+	align-items: center;
+}
+
+.menu {
+	float: right;
+	color: white;
+	align-items: center;
+}
+
+nav {
+	width: 100%;
+	margin:auto;
+	display: flex;
+	line-height: 70px;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	background: blue;
+	z-index: 99;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	padding: 0px 15px 0px 15px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+nav ul li a:hover {
+	color: orange;
+	transition: 0.3s;
+}
+
+.tbl-web {
+	background: orange;
+	color: black;
+	border-radius: 20px;
+	margin-top: 20px;
+	padding: 15px 20px 15px 20px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.tbl-web:hover {
+	background-color: yellow;
+	color: black;
+}
+
+.banner {
+	height: 86.5vh;
+	border:5px solid;
+	background-image: url('asset/img/Bahasa-Inggris.jpeg');
+	background-size: cover;
+	border-color: blue;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(9, 2, 46, 0.3);
+}
+
+.banner h2 {
+	padding: 15px 20px;
+	color: white;
+	z-index: 0;
+	border:5px solid;
+	z-index: 1;
+}
+
+.sosmed {
+	border: 5px solid blue;
+	display: flex;
+	justify-content: center;
+	background: blue;
+	border-bottom-left-radius: 12%;
+	border-bottom-right-radius: 12%;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 70px;
+}
+
+.sosmed ul {
+	display: flex;
+}
+
+.sosmed ul li {
+	border-radius: 50%;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	transition: 0.3s;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.sosmed ul li a {
+	font-size: 45px;
+	color: white;
+}
+
+.sosmed ul li h2 {
+	font-size: 13px;
+	opacity: 0;
+	transition: 0.3s;
+}
+
+.sosmed ul li:hover {
+	width: 80px;
+	height: 80px;
+	padding: 15px;
+	background: #181818;
+	transition: 0.3s;
+}
+
+.sosmed ul li:hover h2 {
+	opacity: 1;
+	transition: 0.3s;
+}
+
+.judul-berita {
+	font-size: 30px;
+	font-weight: bold;
+	color: orange;
+	text-align: center;
+	margin: 30px;
+
+}
+
+.posts {
+	margin: 40px;
+	border: 2px solid orange;
+	height: 54vh;
+}
+
+.post-box {
+	display: flex;
+	justify-content: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	overflow: scroll;
+
+	max-height: 54vh;
+}
+
+.card-post {
+	margin: 20px;
+	border: 1px solid orange;
+	width: 350px;
+	height: 250px;
+	justify-content: center;
+	align-items: center;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.card-post a {
+	justify-content: center;
+	align-items: center;
+}
+
+.card-post a img {
+	width: 350px;
+	height: 200px;
+}
+
+.card-post a h1 {
+	text-align: center;
+	border: 1px solid orange;
+	background: orange;
+	color: #181818;
+}
+
+.about {
+	border: 1px solid orange;
+	border-radius: 7px;
+	margin: 30px;
+}
+
+.about .konten-about h1 {
+	font-size: 50px;
+	font-weight: bold;
+	color: orange;
+	text-align: center;
+	margin: 35px;
+}
+
+.about .konten-about .text-about {
+	margin: 20px;
+}
+
+.about .konten-about .text-about img {
+	margin: 10px;
+	display: inline-block;
+}
+
+.dosen {
+	margin: 50px;
+	justify-content: center;
+	text-align: center;
+}
+
+.kartu-dosen {
+	margin: 30px;
+	padding: 10px;
+	justify-content: center;
+	text-align: center;
+	border: 3px solid orange;
+	display: inline-block;
+	border-radius: 10px;
+}
+
+.kartu-dosen img {
+	border: 3px solid orange;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.kartu-dosen .nama-dosen {
+	color: orange;
+	font-size: 16px;
+	margin: 10px;
+}
+
+.kartu-dosen a {
+	color: white;
+	padding: 8px;
+	border-radius: 10px;
+	font-weight: bold;
+	background: rgb(41, 110, 238);
+	transition: 0.3s;
+}
+
+.kartu-dosen a:hover {
+	color: rgb(41, 110, 238);
+	background: transparent;
+	border: 2px solid rgb(41, 110, 238);
+	transition: 0.3s;
+}
+
+.visi-misi p {
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	margin: 50px;
+}
+
+.data-dosen {
+	border: 2px solid orange;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+.profil {
+	margin: 15px;
+	display: flex;
+}
+
+.profil img {
+	width: 442px;
+	height: 442px;
+}
+
+.data {
+	margin: 15px;
+}
+
+.data h1 {
+	margin: 10px;
+}
+
+table {
+	border: 2px solid orange;
+}
+
+tr {
+	border: 2px solid orange;
+	padding: 5px;
+	justify-content: center;
+	text-align: center;
+}
+
+td {
+	border: 2px solid orange;
+	padding: 5px;
+	width: 300px;
+}
+
+.judul-tabel {
+	padding: 10px;
+}
+
+.publikasi {
+	margin-top: 70px;
+	text-align: center;
+}
+
+.publikasi a {
+	color: orange;
+	margin-right: 10px;
+	transition: 0.3s;
+}
+
+.publikasi a:hover {
+	color: white;
+	transition: 0.3s;
+}
+
+
+
+
+
+/* footer */
+footer {
+	background: rgb(18, 18, 51);
+	width: 100%;
+	bottom: 0;
+}
+
+footer ~ .copyright {
+	float: right;
+}
+
+.hub {
+	display: inline-block;
+}
+
+footer .hub ul {
+	display: flex;
+}
+
+footer .hub ul li {
+	color: white;
+	font-size: 16px;
+	display: flex;
+}
+
+.hub ul li a {
+	color: white;
+	margin: 10px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.hub ul li a:hover {
+	color: orange;
+	transition: 0.3s;
+}
+
+.hub ul li h2 {
+	font-size: 20px;
+	align-items: center;
+	transform: translateY(6px);
+}
+
+.copyright {
+	float: right;
+	font-size: 16px;
+	color: white;
+	transition: 0.3s;
+	margin: 10px;
+}
+
+footer ~ h2 {
+	text-align: right;
+}
+
+.copyright a {
+	color: white;
+	transition: 0.3s;
+	text-decoration: underline;
+}
+
+.copyright a:hover {
+	color: orange;
+	transition: 0.3s;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px transparent;
+    border-radius: 10px;
+	margin-right: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 5px;
+  }
